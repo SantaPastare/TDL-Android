@@ -13,3 +13,8 @@ end
 Then(/^I see "(.*)" in the conversion section$/) do |number|
     expect(@pages.numbers_screen.conversion_section_text).to eql number
 end
+
+And(/^I have "(.*)" type as base and "(.*)" type as the converter$/) do |base_type, conversion_type|
+    step "I have selected \"#{base_type}\" as base numbers"
+    step "I have selected \"#{conversion_type}\" as the conversion type"
+end
