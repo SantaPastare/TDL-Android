@@ -1,6 +1,7 @@
 @menu
 Feature: As a user I want to be able to navigate between different screens
 
+  @wip
   Scenario: Side menu button press
     Given I am on Home screen
     When I press on Menu icon
